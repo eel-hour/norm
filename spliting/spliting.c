@@ -6,7 +6,7 @@
 /*   By: eel-hour <eel-hour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 13:06:02 by eel-hour          #+#    #+#             */
-/*   Updated: 2023/08/02 05:25:24 by eel-hour         ###   ########.fr       */
+/*   Updated: 2023/08/02 05:50:26 by eel-hour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ int	counting(char *s)
 	return (co);
 }
 
-void	ft_spliting2(char **s, int *a, int *b, int *i, int *j)
-{
-	//hna ghan7t li wst "while (s[i] && j < (counting(s) + 1))"
-}
+// void	ft_spliting2(char **s, int *a, int *b, int *i, int *j)
+// {
+// 		hna ghan7t li wst "while (s[i] && j < (counting(s) + 1))"
+// }
 
 char	**ft_spliting(char *s)
 {
@@ -61,7 +61,6 @@ char	**ft_spliting(char *s)
 		while ((s[i] != '$' && s[i] != '/' && s[i] != '+') && s[i])
 			i++;
 		b = i;
-		ft_spliting2(&s, &a, &b, &i, &j);
 		trimmed[j++] = ft_substr(s, a, (b - a));
 	}
 	trimmed[j] = NULL;
