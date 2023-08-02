@@ -33,7 +33,6 @@ int	countwrd(char *str, char c)
 	return (i);
 }
 
-
 char	*wordalc(char *str, int start, int end)
 {
 	int		i;
@@ -49,8 +48,8 @@ char	*wordalc(char *str, int start, int end)
 
 char	**ft_split(char *s, char c)
 {
-	int	i;
-	int	k;
+	int		i;
+	int		k;
 	int		start;
 	char	**ptr;
 
